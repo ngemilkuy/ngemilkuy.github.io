@@ -1,282 +1,514 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<!--[if IE 7]><html class="ie ie7"><![endif]-->
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
+<html lang="en">
+
 <head>
-
-    <!--- basic page needs
-    ================================================== -->
     <meta charset="utf-8">
-    <title>Hanna Harahap</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="images/hanna.png" type="image/x-icon">
-    <link rel="icon" href="images/hanna.png" type="image/x-icon">
-    <style>
-    * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.modalDialog {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 99999;
-    opacity:0;
-    -webkit-transition: opacity 100ms ease-in;
-    -moz-transition: opacity 100ms ease-in;
-    transition: opacity 100ms ease-in;
-    pointer-events: none;
-}
-.modalDialog:target {
-    opacity:1;
-    pointer-events: auto;
-}
-.modalDialog > div {
-    max-width: 800px;
-    width: 90%;
-    position: relative;
-    margin: 10% auto;
-    padding: 20px;
-    border-radius: 3px;
-    background: #fff;
-}
-.close {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f26d7d;
-    color: #fff;
-    line-height: 25px;
-    position: absolute;
-    right: -12px;
-    text-align: center;
-    top: -10px;
-    width: 34px;
-    height: 34px;
-    text-decoration: none;
-    font-weight: bold;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    -moz-box-shadow: 1px 1px 3px #000;
-    -webkit-box-shadow: 1px 1px 3px #000;
-    box-shadow: 1px 1px 3px #000;
-    padding-top: 5px;
-}
-.close:hover {
-    background: #fa3f6f;
-}
-</style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="images/ngemilkuy.jpg" rel="icon">
+    <meta name="author" content="Nghia Minh Luong">
+    <meta name="keywords" content="Default Description">
+    <meta name="description" content="Default keyword">
+    <title>NgemilKuy</title>
+    <!-- Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Archivo+Narrow:300,400,700%7CMontserrat:300,400,500,600,700,800,900"
+        rel="stylesheet">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/ps-icon/style.css">
+    <!-- CSS Library-->
+    <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/owl-carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css">
+    <link rel="stylesheet" href="plugins/slick/slick/slick.css">
+    <link rel="stylesheet" href="plugins/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="plugins/Magnific-Popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="plugins/revolution/css/settings.css">
+    <link rel="stylesheet" href="plugins/revolution/css/layers.css">
+    <link rel="stylesheet" href="plugins/revolution/css/navigation.css">
+    <!-- Custom-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!--WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.migration.min.js">
+    </script>
 </head>
+<!--[if IE 7]><body class="ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 8]><body class="ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 9]><body class="ie9 lt-ie10"><![endif]-->
 
-<body>
-
-    <!-- home
-    ================================================== -->
-    <main class="s-home s-home--particles">
-
-        <div id="particles-js" class="home-particles"></div>
-        
-       
-        <div class="home-content">
-            <div class="row home-content__main">
-
-                <div class="col-eight home-content__text pull-right">
-                    <h3>Welcome to My Profile</h3>
-                    <div class="row">
-                        <h1 class="text-center"><a href="#"><img src="images/hanna.jpg" class="img-responsive center" style="width:180px;height:240px;"></a></h1>
+<body class="ps-loading">
+    <div class="header--sidebar"></div>
+    <header class="header">
+        <div class="header__top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 col-sm-6 col-xs-12 ">
+                        <p>Padangmatinggi. perumahan griya sarina No 86, Kota Padangsidimpuan Provinsi Sumatra Utara</p>
                     </div>
-                    <h1 class="text-center">
-                    Hanna Aulina Harahap
-                    </h1>
-                    
-                    <h3 class="text-center">“Hidup itu bukan hanya soal perjuangan, melainkan menemukan jati diri Anda sendiri.”</h3>
-                   
-                    <h5 class="text-center" style="mb-10">
-                        <a href="https://www.facebook.com/hannaulina" data-toggle="tooltip" data-placement="bottom" title="Facebook" target="_blank"><span class="hb hb-sm"><i class="fab fa-facebook"></i></span></a> 
-                        <a href="#openModal-about" data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><span class="hb hb-sm"><i class="fab fa-whatsapp"></i></span></a>
-                        <a href="#openModal-about" data-toggle="tooltip" data-placement="bottom" title="Email"><span class="hb hb-sm"><i class="fas fa-envelope"></i></span></a> 
-                        <a href="https://www.instagram.com/hannaharahap28" data-toggle="tooltip" data-placement="bottom" title="Instagram"target="_blank"><span class="hb hb-sm"><i class="fab fa-instagram"></i></span></a> 
-                          </h5>
-                          <br><br><br>
-                    <div class="home-content__subscribe">
-                        <form id="mc-form" class="group" novalidate="true">
-                            <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
-                            <input type="submit" name="subscribe" value="Notify Me">
-                            <label for="mc-email" class="subscribe-message"></label>
-                        </form>
-                    </div>
-                </div>  <!-- end home-content__text -->
-
-                <div class="col-four home-content__counter">
-                    <h3>Launching In</h3>
-
-                    <div class="home-content__clock">
-                        <div class="top">
-                            <div class="time days">
-                                325
-                                <span>Days</span>
+                    <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 ">
+                        <div class="header__actions">
+                            <div class="btn-group ps-dropdown"><a class="dropdown-toggle" href="#"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language<i
+                                        class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Japanese</a></li>
+                                    <li><a href="#">Chinese</a></li>
+                                </ul>
                             </div>
-                        </div>    
-                        <div class="time hours">
-                            09
-                            <span>H</span>
                         </div>
-                        <div class="time minutes">
-                            54
-                            <span>M</span>
-                        </div>
-                        <div class="time seconds">
-                            30
-                            <span>S</span>
-                        </div>
-                        </div>  <!-- end home-content__clock -->
-                        </div>  <!-- end home-content__counter --><br>
-                        <h4 class="text-white"><font color="white">01 Januari 2020 | 00:01 WIB</font></h4>
-
-            </div>  <!-- end home-content__main -->
-
-            <ul class="home-social">
-                <li>
-                <a href="https://www.facebook.com/hannaulina"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
-                </li>
-               
-                <li>
-                <a href="https://www.instagram.com/hannaharahap28"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
-                </li>
-                
-            </ul> <!-- end home-social -->
-
-            <div class="row home-copyright">
-                <span>Copyright 2019</span> 
-                <span>Design by <a href="https://ariedalimunthe.github.io/">ariedalimunthe</a></span>
-            </div> <!-- end home-copyright -->
-
-
-            <div class="home-content__line"></div>
-
-        </div> <!-- end home-content -->
-
-    </main> <!-- end s-home -->
-
-
-    <!-- info
-    ================================================== -->
-    <a class="info-toggle" href="#0">
-        <span class="info-menu-icon"></span>
-    </a>
-
-    <div class="s-info">
-
-        <div class="row info-wrapper">
-
-            <div class="col-seven tab-full info-main">
-                <h1>Hanna Oulina Harahap</h1>
-                <p>
-                     Masalah hidup yang dihadapi memang tak bisa dianggap sepele. Buktinya tak sedikit dari mereka yang mengalami
-                     permasalah hidup menjadi stres dan sulit mengendalikan diri. Mereka menjadi pemarah, tidak sabaran, 
-                     bahkan sering menangissendiri.
-                </p>
-
-                <p>
-                    Dalam hidup, seringkali manusia merasakan jatuh bangun dan pahit getirnya kehidupan. 
-                    Ketika manusia berada pada posisi yang sangat terpuruk, tentu saja ia akan sagat membutuhkan dorongan
-                    dan semangat untuk bangkit, butuk suara atau semangat dari siapa saja orang terdekatnya
-                </p>
-            </div>
-
-            <div class="col-four tab-full pull-right info-contact">
-
-                <div class="info-block">
-                    <h3>Start A Conversation</h3>
-                    <p>
-                        <a href="#openModal-about" class="info-email">Hanna Aulina Harahap</a><br>
-                         </p>
+                    </div>
                 </div>
-
-                <div class="info-block">
-                    <h3>Contact Info</h3>
-                    
-                    <p class="info-address">
-                        Medan<br>
-                       Sumatera Utara<br>
-                        Indonesia
-                    </p>
-                </div>
-
-                <div class="info-block">
-                    <h3>Find Us On</h3>
-                    
-                    <ul class="info-social">
-                        <li>
-                            <a href="https://www.facebook.com/hannaulina"><i class="fab fa-facebook" aria-hidden="true"></i>
-                            <span>Facebook</span></a>
-                        </li>
-                       
-                        <li>
-                            <a href="https://www.instagram.com/hannaharahap28"><i class="fab fa-instagram" aria-hidden="true"></i>
-                            <span>Instagram</span></a>
-                        </li>
-                       
-                    </ul>
-                </div>
-                
-            </div>  <!-- end info contact -->
-
-        </div>  <!-- end info wrapper -->
-
-    </div> <!-- end s-info -->
-
-
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader">
-            <div class="line-scale-pulse-out">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
             </div>
         </div>
-    </div>
-    <div id="openModal-about" class="modalDialog">
-        <div>
-           <a href="#close" title="Close" class="close">X</a>
-           <h2>Please DM Me On Facebook or Instagram :)</h2>
-          
-         </div>
-     </div>
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/polygons.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/script.js"></script>
-   
+        <nav class="navigation">
+            <div class="container-fluid">
+                <div class="navigation__column left">
+                    <div class="header__logo"><a class="ps-logo" href="index.html"><img src="images/logo.png"
+                                alt=""></a></div>
+                </div>
+                <div class="navigation__column center">
+                    <ul class="main-menu menu">
+                        <li class="menu-item menu-item-has-children"><a href="index.html">Home</a>
 
+                        </li>
+
+                        <li class="menu-item menu-item-has-children dropdown"><a href="#">Instagram</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a target="_blank" href="https://instagram.com/iveyhasibuan/"><i
+                                            class="fa fa-instagram"></i> Ivey
+                                        Yanti Hasibuan</a></li>
+                                <li class="menu-item"><a target="_blank" href="https://instagram.com/elfirizkii/"><i
+                                            class="fa fa-instagram"></i> Elfirizki</a></li>
+                                <li class="menu-item"><a target="_blank" href="https://instagram.com/ngemilkuy7/"><i
+                                            class="fa fa-instagram"></i> NgemilKuy</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children"><a target="_blank" href="ivey/index.html">Ivey
+                                Yanti Hasibuan</a>
+
+                        </li>
+                        <li class="menu-item menu-item-has-children dropdown"><a href="#">Whatsapp</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a target="_blank"
+                                        href="https://wa.me/6282166626472?text=Iya ada yag bisa di bantu ?"><i
+                                            class="fa fa-whatsapp"></i> Ivey
+                                        Yanti Hasibuan</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navigation__column right">
+                    <form class="ps-search--header" action="do_action" method="post">
+                        <input class="form-control" type="text" placeholder="Search Product…">
+                        <button><i class="ps-icon-search"></i></button>
+                    </form>
+
+                    <div class="menu-toggle"><span></span></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="header-services">
+        <div class="ps-services owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="7000"
+            data-owl-gap="0" data-owl-nav="true" data-owl-dots="false" data-owl-item="1" data-owl-item-xs="1"
+            data-owl-item-sm="1" data-owl-item-md="1" data-owl-item-lg="1" data-owl-duration="1000"
+            data-owl-mousedrag="on">
+            <p class="ps-service"><i class="ps-icon-delivery"></i><strong>Free delivery</strong>: Get free standard
+                delivery on every order with NgemilKuy</p>
+            <p class="ps-service"><i class="ps-icon-delivery"></i><strong>NgemilKuy</strong>: Pedas Enak Mantap
+            </p>
+
+        </div>
+    </div>
+    <main class="ps-main">
+        <div class="ps-banner">
+            <div class="rev_slider fullscreenbanner" id="home-banner">
+                <ul>
+                    <li class="ps-banner" data-index="rs-2972" data-transition="random" data-slotamount="default"
+                        data-hideafterloop="0" data-hideslideonmobile="off" data-rotate="0"><img class="rev-slidebg"
+                            src="images/slider/3.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                            data-bgrepeat="no-repeat" data-bgparallax="5" data-no-retina>
+                        <div class="tp-caption ps-banner__header" id="layer-1" data-x="left"
+                            data-hoffset="['-60','15','15','15']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['-150','-120','-150','-170']" data-width="['none','none','none','400']"
+                            data-type="text" data-responsive_offset="on"
+                            data-frames="[{&quot;delay&quot;:1000,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;x:50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]">
+                            <p>March 2002 <br> Nike SB Dunk Low Pro</p>
+                        </div>
+                        <div class="tp-caption ps-banner__title" id="layer21" data-x="['left','left','left','left']"
+                            data-hoffset="['-60','15','15','15']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['-60','-40','-50','-70']" data-type="text" data-responsive_offset="on"
+                            data-textAlign="['center','center','center','center']"
+                            data-frames="[{&quot;delay&quot;:1200,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;x:50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]">
+                            <p class="text-uppercase">SUBA</p>
+                        </div>
+                        <div class="tp-caption ps-banner__description" id="layer211"
+                            data-x="['left','left','left','left']" data-hoffset="['-60','15','15','15']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['30','50','50','50']"
+                            data-type="text" data-responsive_offset="on"
+                            data-textAlign="['center','center','center','center']"
+                            data-frames="[{&quot;delay&quot;:1200,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;x:50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]">
+                            <p>Supa wanted something that was going to rep his East Coast <br> roots and, more
+                                specifically, his hometown of <br /> New York City in a big way.</p>
+                        </div><a class="tp-caption ps-btn" id="layer31" href="#" data-x="['left','left','left','left']"
+                            data-hoffset="['-60','15','15','15']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['120','140','200','200']" data-type="text" data-responsive_offset="on"
+                            data-textAlign="['center','center','center','center']"
+                            data-frames="[{&quot;delay&quot;:1500,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;x:50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]">Purchase
+                            Now<i class="ps-icon-next"></i></a>
+                    </li>
+                    <li class="ps-banner ps-banner--white" data-index="rs-100" data-transition="random"
+                        data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-rotate="0">
+                        <img class="rev-slidebg" src="images/slider/2.jpg" alt="" data-bgposition="center center"
+                            data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" data-no-retina>
+                        <div class="tp-caption ps-banner__header" id="layer20" data-x="left"
+                            data-hoffset="['-60','15','15','15']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['-150','-120','-150','-170']" data-width="['none','none','none','400']"
+                            data-type="text" data-responsive_offset="on"
+                            data-frames="[{&quot;delay&quot;:1000,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;x:50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]">
+                            <p>BEST ITEM <br> THIS SUMMER</p>
+                        </div>
+                        <div class="tp-caption ps-banner__title" id="layer339" data-x="['left','left','left','left']"
+                            data-hoffset="['-60','15','15','15']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['-60','-40','-50','-70']" data-type="text" data-responsive_offset="on"
+                            data-textAlign="['center','center','center','center']"
+                            data-frames="[{&quot;delay&quot;:1200,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;x:50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]">
+                            <p class="text-uppercase">Recovery</p>
+                        </div>
+                        <div class="tp-caption ps-banner__description" id="layer2-14"
+                            data-x="['left','left','left','left']" data-hoffset="['-60','15','15','15']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['30','50','50','50']"
+                            data-type="text" data-responsive_offset="on"
+                            data-textAlign="['center','center','center','center']"
+                            data-frames="[{&quot;delay&quot;:1200,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;x:50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]">
+                            <p>Supa wanted something that was going to rep his East Coast <br> roots and, more
+                                specifically, his hometown of <br /> New York City in a big way.</p>
+                        </div><a class="tp-caption ps-btn" id="layer364" href="#" data-x="['left','left','left','left']"
+                            data-hoffset="['-60','15','15','15']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['120','140','200','200']" data-type="text" data-responsive_offset="on"
+                            data-textAlign="['center','center','center','center']"
+                            data-frames="[{&quot;delay&quot;:1500,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;x:50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]">Purchase
+                            Now<i class="ps-icon-next"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ps-section--features-product ps-section masonry-root pt-100 pb-100">
+            <div class="ps-container">
+                <div class="ps-section__header mb-50">
+                    <h3 class="ps-section__title" data-mask="features">- Features Products</h3>
+                    <ul class="ps-masonry__filter">
+                        <li class="current"><a href="#" data-filter="*">All</a></li>
+                        <li><a href="#" data-filter=".nike">Bakso Mercon <sup>1</sup></a></li>
+                        <li><a href="#" data-filter=".adidas">Susu <sup>1</sup></a></li>
+                    </ul>
+                </div>
+                <div class="ps-section__content pb-50">
+                    <div class="masonry-wrapper" data-col-md="4" data-col-sm="2" data-col-xs="1" data-gap="30"
+                        data-radio="100%">
+                        <div class="ps-masonry">
+                            <div class="grid-sizer"></div>
+
+
+
+                            <div class="grid-item men">
+                                <div class="grid-item__content-wrapper">
+                                    <div class="ps-shoe mb-15">
+                                        <div class="ps-shoe__thumbnail"><a class="ps-shoe__favorite" href="#"><i
+                                                    class="ps-icon-heart"></i></a><img src="images/baksomercon.jpg"
+                                                alt=""><a class="ps-shoe__overlay" href="product-detail.html"></a>
+                                        </div>
+                                        <div class="ps-shoe__content">
+                                            <div class="ps-shoe__detail">Ratings
+                                                <select class="ps-rating ps-shoe__rating">
+                                                    <option value="1">1</option>
+                                                    <option value="1">2</option>
+                                                    <option value="1">3</option>
+                                                    <option value="1">4</option>
+                                                    <option value="2">5</option>
+                                                </select>
+                                            </div>
+                                            <div class="ps-shoe__detail"><a class="ps-shoe__name" href="#">Bakso
+                                                    Mercon</a>
+                                                <p class="ps-shoe__categories"><a href="#">Mantap</a>,<a href="#">
+                                                        Pedas</a>,<a href="#"> Enak</a></p><span
+                                                    class="ps-shoe__price">Rp. 20.000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item nike">
+                                <div class="grid-item__content-wrapper">
+                                    <div class="ps-shoe mb-15">
+                                        <div class="ps-shoe__thumbnail"><a class="ps-shoe__favorite" href="#"><i
+                                                    class="ps-icon-heart"></i></a><img src="images/baksomercon2.jpg"
+                                                alt=""><a class="ps-shoe__overlay" href="product-detail.html"></a>
+                                        </div>
+                                        <div class="ps-shoe__content">
+                                            <div class="ps-shoe__detail">
+                                                <div class="ps-shoe__detail">Ratings
+                                                    <select class="ps-rating ps-shoe__rating">
+                                                        <option value="1">1</option>
+                                                        <option value="1">2</option>
+                                                        <option value="1">3</option>
+                                                        <option value="1">4</option>
+                                                        <option value="2">5</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                            <div class="ps-shoe__detail"><a class="ps-shoe__name" href="#">Bakso
+                                                    Mercon</a>
+                                                <p class="ps-shoe__categories"><a href="#">Mantap</a>,<a href="#">
+                                                        Pedas</a>,<a href="#"> Enak</a></p><span
+                                                    class="ps-shoe__price">Rp. 20.000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item adidas">
+                                <div class="grid-item__content-wrapper">
+                                    <div class="ps-shoe mb-15">
+                                        <div class="ps-shoe__thumbnail"><a class="ps-shoe__favorite" href="#"><i
+                                                    class="ps-icon-heart"></i></a><img src="images/susu.jpg" alt=""><a
+                                                class="ps-shoe__overlay" href="product-detail.html"></a>
+                                        </div>
+                                        <div class="ps-shoe__content">
+                                            <div class="ps-shoe__detail">
+                                                <div class="ps-shoe__detail">Ratings
+                                                    <select class="ps-rating ps-shoe__rating">
+                                                        <option value="1">1</option>
+                                                        <option value="1">2</option>
+                                                        <option value="1">3</option>
+                                                        <option value="1">4</option>
+                                                        <option value="2">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="ps-shoe__detail"><a class="ps-shoe__name" href="#">Susu</a>
+                                                <p class="ps-shoe__categories"><a href="#">Mantap</a>,<a href="#">
+                                                        Sehat</a>,<a href="#"> Enak</a></p><span
+                                                    class="ps-shoe__price">Rp. 8.000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item kids">
+                                <div class="grid-item__content-wrapper">
+                                    <div class="ps-shoe mb-30">
+                                        <div class="ps-shoe__thumbnail"><a class="ps-shoe__favorite" href="#"><i
+                                                    class="ps-icon-heart"></i></a><img src="images/jagung.jpg" alt=""><a
+                                                class="ps-shoe__overlay" href="product-detail.html"></a>
+                                        </div>
+                                        <div class="ps-shoe__content">
+                                            <div class="ps-shoe__detail">
+                                                <div class="ps-shoe__detail">Ratings
+                                                    <select class="ps-rating ps-shoe__rating">
+                                                        <option value="1">1</option>
+                                                        <option value="1">2</option>
+                                                        <option value="1">3</option>
+                                                        <option value="1">4</option>
+                                                        <option value="2">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="ps-shoe__detail"><a class="ps-shoe__name" href="#">Jasuke</a>
+                                                <p class="ps-shoe__categories"><a href="#">Mantap</a>,<a href="#">
+                                                        Jagung</a>,<a href="#"> Susu</a></p><span
+                                                    class="ps-shoe__price">Rp. 15.000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ps-section--offer">
+
+        </div>
+
+
+        <div class="ps-home-testimonial bg--parallax pb-80" data-background="images/background/parallax.jpg">
+            <div class="container">
+                <div class="owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="5000" data-owl-gap="0"
+                    data-owl-nav="false" data-owl-dots="true" data-owl-item="1" data-owl-item-xs="1"
+                    data-owl-item-sm="1" data-owl-item-md="1" data-owl-item-lg="1" data-owl-duration="1000"
+                    data-owl-mousedrag="on" data-owl-animate-in="fadeIn" data-owl-animate-out="fadeOut">
+                    <div class="ps-testimonial">
+                        <div class="ps-testimonial__thumbnail"><img src="ivey/images/ivey.jpg" alt=""><i
+                                class="fa fa-quote-left"></i></div>
+                        <header>
+                            <select class="ps-rating">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                                <option value="1">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <p>Ivey Yanti Hasibuan & Elfirizki</p>
+                        </header>
+                        <footer>
+                            <p>“Hommemade, 100% Halal “</p>
+                        </footer>
+                    </div>
+                    <div class="ps-testimonial">
+                        <div class="ps-testimonial__thumbnail"><img src="ivey/images/ivey2.jpg" alt=""><i
+                                class="fa fa-quote-left"></i></div>
+                        <header>
+                            <select class="ps-rating">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                                <option value="1">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <p>Ivey Yanti Hasibuan & Elfirizki</p>
+                        </header>
+                        <footer>
+                            <p>“Hommemade “</p>
+                        </footer>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="ps-subscribe">
+            <div class="ps-container">
+                <div class="row">
+                    <div class="col-md-6"><a href="#"><img width="300" src="ivey/images/ngemilkuy.jpg" alt=""></a>
+                    </div><br>
+                    <div class="col-md-6"><a href="#"><img width="300" src="images/ngemilkuylogo.jpg" alt=""></a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="ps-footer bg--cover" data-background="images/background/parallax.jpg">
+            <div class="ps-footer__content">
+                <div class="ps-container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 ">
+                            <aside class="ps-widget--footer ps-widget--info">
+                                <header><a class="ps-logo" href="index.html"><img src="images/logo-white.png"
+                                            alt=""></a>
+                                    <h3 class="ps-widget__title">Address Office </h3>
+                                </header>
+                                <footer>
+                                    <p><strong>Padangmatinggi perumahan griya sarina No 86, Kota
+                                            Padangsidimpuan</strong></p>
+
+                                </footer>
+                            </aside>
+                        </div>
+
+                        <div class="col-lg-4 col-md-2 col-sm-4 col-xs-12 ">
+                            <aside class="ps-widget--footer ps-widget--link">
+                                <header>
+                                    <h3 class="ps-widget__title">Social Media</h3>
+                                </header>
+                                <footer>
+                                    <ul class="ps-list--line">
+                                        <li><a href="https://www.instagram.com/ngemilkuy7/"><i
+                                                    class="fa fa-instagram"></i> @ngemilkuy</a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i> Ngemil Kuy</a></li>
+                                        <li><a href="https://wa.me/6282166626472?text=Iya ada yag bisa di bantu ?"><i
+                                                    class=" fa
+                                                fa-whatsapp"></i> 082166626472 -> Ivey</a></li>
+                                        <li><a href="https://wa.me/6282166626472?text=Iya ada yag bisa di bantu ?""><i class="
+                                                fa fa-whatsapp"></i> 082166626472 -> Rizki</a></li>
+
+                                    </ul>
+                                </footer>
+                            </aside>
+                        </div>
+                        <div class="col-lg-4 col-md-2 col-sm-4 col-xs-12 ">
+                            <aside class="ps-widget--footer ps-widget--link">
+                                <header>
+                                    <h3 class="ps-widget__title">Get Help</h3>
+                                </header>
+                                <footer>
+                                    <ul class="ps-list--line">
+                                        <li><a href="#">Order Status</a></li>
+                                        <li><a href="#">Shipping and Delivery</a></li>
+                                        <li><a href="#">Returns</a></li>
+                                        <li><a href="#">Payment Options</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </footer>
+                            </aside>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="ps-footer__copyright">
+                <div class="ps-container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                            <p>&copy; <a href="#">NGEMILKUY</a>, Made by <a href="https://ariedalimunthe.github.io">
+                                    Arie
+                                    Dalimunthe </a></p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                            <ul class="ps-social">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- JS Library-->
+    <script type="text/javascript" src="plugins/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="plugins/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+    <script type="text/javascript" src="plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="plugins/gmap3.min.js"></script>
+    <script type="text/javascript" src="plugins/imagesloaded.pkgd.js"></script>
+    <script type="text/javascript" src="plugins/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="plugins/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="plugins/slick/slick/slick.min.js"></script>
+    <script type="text/javascript" src="plugins/elevatezoom/jquery.elevatezoom.js"></script>
+    <script type="text/javascript" src="plugins/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js">
+    </script>
+    <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js">
+    </script>
+    <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js">
+    </script>
+    <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <!-- Custom scripts-->
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
